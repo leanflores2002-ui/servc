@@ -49,7 +49,7 @@
     emailjs.init("TU_EMAILJS_USER_ID");
 
     // Configuración de correo predefinido
-    const EMAIL_ADDRESS = "lean.flores2002@gmail.com"; // ej. usuario@ejemplo.com
+    const EMAIL_ADDRESS = "lean.flores2002@gmail.com";
 
     // Mostrar fecha y hora actuales
     function updateDateTime() {
@@ -97,7 +97,7 @@
 
     // Función para enviar notificación por correo (usando EmailJS)
     function sendEmailNotification(message) {
-      emailjs.send('lean.flores2002@gmail.com', 'lean.flores2002@gmail.com', {
+      emailjs.send('TU_EMAILJS_SERVICE_ID', 'TU_EMAILJS_TEMPLATE_ID', {
         to_email: EMAIL_ADDRESS,
         message: message
       }).then(
